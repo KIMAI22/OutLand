@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Outland — Покупка привилегий</title>
+  <meta name="description" content="Купить привилегии на сервере Minecraft Outland — официальный магазин." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#9aa4b2;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%, #071b2a 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4c1d95);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:22px}
+    h1{margin:0;font-size:20px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;margin-top:28px}
+    .hero-card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
+    .hero h2{margin:0 0 8px 0;font-size:28px}
+    .hero p{color:var(--muted);line-height:1.5}
+    .packages{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:28px}
+    .package{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 8px 30px rgba(2,6,23,0.6);display:flex;flex-direction:column;justify-content:space-between}
+    .pkg-title{font-size:18px;margin-bottom:6px}
+    .pkg-price{font-size:24px;color:var(--accent);margin:10px 0}
+    .pkg-list{color:var(--muted);font-size:14px;margin:12px 0}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600;text-align:center;text-decoration:none}
+    footer{margin-top:40px;text-align:center;color:var(--muted);font-size:14px}
+    @media (max-width:960px){
+      .packages{grid-template-columns:repeat(1,1fr)}
+      .container{margin:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">OL</div>
+        <div>
+          <h1>Outland — Магазин привилегий</h1>
+          <div class="small">Выдача осуществляется на Play Rok</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#packages">Пакеты</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Поддержи сервер Outland</h2>
+        <p>Купи один из пакетов привилегий и получи доступ к уникальным возможностям. Выдача происходит вручную на Play Rok.</p>
+        <p><strong>IP:</strong> Surival-aUHP.aternos.me<br>
+        <strong>Порт:</strong> 31056</p>
+      </div>
+    </section>
+
+    <section id="packages" class="packages">
+      <div class="package">
+        <div>
+          <div class="pkg-title">VIP</div>
+          <div class="pkg-price">20 ₽</div>
+          <ul class="pkg-list">
+            <li>Привилегия VIP на сервере Outland</li>
+          </ul>
+        </div>
+        <a href="#" class="btn">Купить</a>
+      </div>
+      <div class="package">
+        <div>
+          <div class="pkg-title">VIP-гость</div>
+          <div class="pkg-price">10 ₽</div>
+          <ul class="pkg-list">
+            <li>Привилегия VIP-гость на сервере Outland</li>
+          </ul>
+        </div>
+        <a href="#" class="btn">Купить</a>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Outland. Все права защищены.
+    </footer>
+  </div>
+</body>
+</html>
